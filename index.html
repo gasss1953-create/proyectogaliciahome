@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galicia Home | Guía Global & Asesoría Galaica</title>
+    <style>
+        :root {
+            --galicia-blue: #009ad6; /* Azul bandera de Galicia */
+            --forest-green: #2d5a27;
+            --stone-grey: #bdc3c7;
+            --white-glass: rgba(255, 255, 255, 0.85);
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            /* Imagen de fondo que combina el paisaje gallego con tecnología */
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1543160732-22533924f790?auto=format&fit=crop&w=1920&q=80');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        header {
+            background: var(--galicia-blue);
+            color: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        nav { display: flex; justify-content: center; flex-wrap: wrap; }
+        nav a { color: white; margin: 5px 15px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+
+        .wrapper {
+            max-width: 1200px;
+            margin: 20px auto;
+            background: var(--white-glass);
+            padding: 40px;
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Banner de Advertencia Legal */
+        .legal-banner {
+            background: #d1ecf1;
+            color: #0c5460;
+            padding: 20px;
+            border-left: 8px solid var(--galicia-blue);
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        section { margin-bottom: 60px; }
+        h1, h2, h3 { color: var(--galicia-blue); }
+
+        /* Mapa Conceptual */
+        .conceptual-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .box { background: white; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
+
+        /* Nube de Ideas */
+        .word-cloud {
+            text-align: center;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            font-weight: bold;
+        }
+        .w1 { font-size: 2.5em; color: var(--galicia-blue); }
+        .w2 { font-size: 1.8em; color: var(--forest-green); }
+        .w3 { font-size: 1.2em; color: #555; }
+
+        /* Termómetro */
+        .thermometer-wrap {
+            background: #eee;
+            border-radius: 20px;
+            height: 40px;
+            width: 100%;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        .thermometer-fill {
+            background: linear-gradient(90deg, #4caf50, #2196f3);
+            width: 92%; /* Valor de la encuesta */
+            height: 100%;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        .team { display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; }
+        .member { text-align: center; width: 150px; }
+        .member img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; }
+
+        .ad-group { font-size: 0.85em; background: #f9f9f9; padding: 15px; border: 1px dashed #bbb; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GALICIA HOME ONLINE</h1>
+    <nav>
+        <a href="#inicio">INICIO</a>
+        <a href="#nosotros">QUIÉNES SOMOS</a>
+        <a href="#objetivos">OBJETIVOS</a>
+        <a href="#historia">NUESTRA HISTORIA</a>
+        <a href="#ubicacion">UBÍCANOS</a>
+        <a href="#cuenta">TU CUENTA AL TOQUE</a>
+    </nav>
+</header>
+
+<div class="wrapper">
+    
+    <div class="legal-banner">
+        ⚠️ AVISO: NO SOMOS UNA ENTIDAD BANCARIA. <br>
+        Somos asesores técnicos y guías estratégicos de Galicia Home, especializados en el sistema global y economía regional.
+    </div>
+
+    <section id="inicio">
+        <h2>Bienvenido al Sistema Global de Galicia Home</h2>
+        <p>En el entorno de la comunidad española de Galicia, la economía se mueve entre la tradición y la innovación. Galicia Home Online nace para combatir el <strong>desorden financiero</strong> y proporcionar parámetros claros de gestión. No guardamos tu dinero, te enseñamos a multiplicarlo y protegerlo.</p>
+        
+        <div class="word-cloud">
+            <span class="w1">Crecimiento</span> <span class="w3">Sostenibilidad</span> 
+            <span class="w2">Galicia</span> <span class="w1">Guía</span> 
+            <span class="w3">Global</span> <span class="w2">Estrategia</span> 
+            <span class="w1">Seguridad</span>
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <h2>Quiénes Somos</h2>
+        <p>Somos un colectivo de expertos en economía aplicada a la realidad gallega. Nuestra identidad se fusiona con el entorno: desde las rías hasta los centros tecnológicos de Vigo y Coruña.</p>
+        
+        <h3>Nuestro Equipo de Trabajo</h3>
+        <div class="team">
+            <div class="member">
+                <img src="https://via.placeholder.com/100" alt="Líder">
+                <p><strong>Brais G.</strong><br>Director de Guía</p>
+            </div>
+            <div class="member">
+                <img src="https://via.placeholder.com/100" alt="Analista">
+                <p><strong>Iria M.</strong><br>Analista Global</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mapa">
+        <h2>Mapa Conceptual: Tipos, Medidas y Precauciones</h2>
+        <div class="conceptual-grid">
+            <div class="box">
+                <h3>Tipos de Economía</h3>
+                <ul>
+                    <li>Economía Azul (Rías)</li>
+                    <li>Economía Agro-Circular</li>
+                    <li>Economía de Servicios Home</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Medidas de Orden</h3>
+                <ul>
+                    <li>Auditoría de pasivos</li>
+                    <li>Optimización de recursos</li>
+                    <li>Parámetros de liquidez</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Precauciones</h3>
+                <ul>
+                    <li>No confundir asesoría con banca</li>
+                    <li>Evitar especulación sin base</li>
+                    <li>Protección de identidad online</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="ahorro">
+        <h2>Sistema de Ahorro y Parámetros</h2>
+        <p>Nuestra metodología se basa en los <strong>Parámetros Galicia Home</strong>: El control del 10/20/70. (10% imprevistos, 20% inversión futura, 70% vida diaria). Vos y lo que querés es nuestra prioridad.</p>
+    </section>
+
+    <section id="encuesta">
+        <h2>Termómetro de Satisfacción Galicia Home</h2>
+        <p>Resultados de nuestras últimas 5,000 encuestas sobre la efectividad de nuestra guía:</p>
+        <div class="thermometer-wrap">
+            <div class="thermometer-fill">92% de éxito en orden financiero</div>
+        </div>
+    </section>
+
+    <section id="testimonios">
+        <h3>Comentarios de Clientes Satisfechos</h3>
+        <blockquote>"Gracias a Galicia Home Online pude entender cómo gestionar mis activos sin caer en las trampas del sistema tradicional." - <strong>Xabi R.</strong></blockquote>
+        <blockquote>"Excelente guía. Su visión global de la economía gallega es única." - <strong>Lucía P.</strong></blockquote>
+    </section>
+
+    <section id="cuenta">
+        <h2>Tu Cuenta al Toque</h2>
+        <p>Activa tu perfil de asesorado inmediatamente. ¿Vos qué querés? ¿Estabilidad, expansión o retiro? Nosotros trazamos el mapa.</p>
+    </section>
+
+    <section id="marketing">
+        <h2>Estructura de Marketing</h2>
+        <div class="ad-group">
+            <strong>Grupos de Anuncios:</strong> [G-Home_Global] | [G-Home_Asesoría] | [G-Home_Libertad]
+        </div>
+        <div class="ad-group">
+            <strong>Palabras Clave:</strong> Guía Galicia Home, Economía Galicia, Asesores no bancarios, Orden financiero España, Galicia Online Home.
+        </div>
+        <div class="ad-group">
+            <strong>Descripción Extensa:</strong> Proporcionamos una plataforma de acompañamiento integral para ciudadanos gallegos y residentes que buscan una visión objetiva de sus finanzas. A través de parámetros técnicos y una historia de éxito contrastada, Galicia Home se posiciona como el referente número uno en asesoría independiente en toda la comunidad autónoma.
+        </div>
+    </section>
+
+    <section id="ubicacion">
+        <h2>Ubícanos</h2>
+        <p>📍 Praza de Galicia, Santiago de Compostela, España.<br>
+        📧 info@galiciahomeonline.com</p>
+    </section>
+
+</div>
+
+<footer style="background: #333; color: white; text-align: center; padding: 20px;">
+    <p>&copy; 2024 Galicia Home Online - Guía de Estrategia Financiera Global.</p>
+</footer>
+
+</body>
+</html>
